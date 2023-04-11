@@ -1,0 +1,41 @@
+.container {
+  height: 250px;
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid #c78e5c;
+  box-shadow: -1px 2px 8px 2px rgba(0,0,0,0.13);
+}
+.container h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.techContainer{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20%;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+/* SKILL */
+.containerSkill {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  width:130px;
+}
+.contaierSkillName {
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+  
+}
+.nameSkill {
+  font-weight: bold;
+}
+.icon {
+  color: #c78e5c;
+}

@@ -1,0 +1,73 @@
+.containerBackground {
+  /* background: linear-gradient(
+    160deg,
+    rgba(30, 34, 37, 1) 0%,
+    rgba(25, 29, 32, 1) 52%,
+    rgba(16, 20, 23, 1) 100%
+  ); */
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  height: 600px;
+  padding-top: 70px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10vw;
+  margin-bottom: 150px;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 490px;
+  row-gap: 10px;
+}
+.introduction h1 {
+  display: block;
+  color: #c78e5c;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.introduction p {
+  color: rgb(47, 47, 47);
+  font-size: 1rem;
+}
+.position {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.socials {
+  display: flex;
+  column-gap: 20px;
+}
+.socials a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.imageContainer {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.imageContainer img {
+  width: 100%;
+  object-position: 0 -100px;
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    flex-direction: column-reverse;
+    row-gap: 25px;
+  }
+  .introduction{
+    width: 90%;
+  }
+}
