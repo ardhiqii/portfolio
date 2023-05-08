@@ -2,7 +2,7 @@ import styles from "./home.module.css";
 
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin,faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 function Home() {
   return (
     <div className={styles.containerBackground} id="home">
@@ -16,16 +16,27 @@ function Home() {
             developer
           </p>
           <div className={styles.socials}>
-            <a target="_blank" href="https://www.linkedin.com/in/ardhiqi/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/ardhiqi/"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a target="_blank" href="https://github.com/ardhiqii">
+            <a
+              target="_blank"
+              href="https://github.com/ardhiqii"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>
         <div className={styles.imageContainer}>
-          <img src={require("../../images/photo.jpg")} alt="" />
+          <img
+            src="https://storage.googleapis.com/proyek-pertama-dicodidng/aufa.jpg"
+            alt="aufa"
+          />
         </div>
       </div>
     </div>

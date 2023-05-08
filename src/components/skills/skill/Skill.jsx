@@ -3,15 +3,16 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
-
-function Skill({tech,pos}) {
-    const dummy = tech.length % 2 != 0
-  function DisplayTech({ name, level,dummy }) {
+function Skill({ tech, pos }) {
+  const dummy = tech.length % 2 !== 0;
+  function DisplayTech({ name, level, dummy }) {
     return (
       <div className={styles.containerSkill}>
-        {!dummy && <div className={styles.icon}>
-          <FontAwesomeIcon icon={faCircleCheck} />
-        </div>}
+        {!dummy && (
+          <div className={styles.icon}>
+            <FontAwesomeIcon icon={faCircleCheck} />
+          </div>
+        )}
         <div className={styles.contaierSkillName}>
           <p className={styles.nameSkill}>{name}</p>
           <p>{level}</p>
@@ -26,7 +27,7 @@ function Skill({tech,pos}) {
         {tech.map((skill) => (
           <DisplayTech {...skill} />
         ))}
-        {dummy && <DisplayTech dummy/>}
+        {dummy && <DisplayTech dummy />}
       </div>
     </div>
   );
